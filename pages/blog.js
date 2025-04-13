@@ -26,7 +26,7 @@ export async function getStaticProps() {
 export default function Blog({ blogs }) {
   return (
     <Layout>
-      <div className="max-w-4xl mx-auto p-4">
+      <div className="blogContainer"> {/* Use a new class for blog layout */}
         <h1 className="text-3xl font-bold mb-6">Blog</h1>
         <ul className={styles.blogList}>
           {blogs.map((blog) => (
