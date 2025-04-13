@@ -2,17 +2,6 @@
     "redirects": [
       {
         "source": "/:path*",
-        "has": [
-          {
-            "type": "host",
-            "value": "dient.ai"
-          }
-        ],
-        "destination": "https://gra.dient.ai/:path*",
-        "permanent": true
-      },
-      {
-        "source": "/:path*",
         "destination": "https://gra.dient.ai/:path*",
         "permanent": true
       }
