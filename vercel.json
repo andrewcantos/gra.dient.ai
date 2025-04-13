@@ -13,14 +13,8 @@
       },
       {
         "source": "/:path*",
-        "has": [
-          {
-            "type": "host",
-            "value": "(?!gra).*.dient.ai"
-          }
-        ],
         "destination": "https://gra.dient.ai/:path*",
         "permanent": true
       }
     ]
-}
+  }
