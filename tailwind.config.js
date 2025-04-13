@@ -4,6 +4,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./styles/**/*.{css,scss}"
   ],
+  purge: false, // Explicitly disable purging to silence warnings
   theme: {
     extend: {},
   },
