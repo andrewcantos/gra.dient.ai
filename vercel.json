@@ -1,0 +1,9 @@
+{
+    "redirects": [
+      {
+        "source": "/:path*", // Match all paths on dient.ai
+        "destination": "https://gra.dient.ai/:path*", // Redirect to gra.dient.ai
+        "permanent": true // Use a 308 permanent redirect
+      }
+    ]
+}
