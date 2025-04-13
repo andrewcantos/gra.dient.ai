@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import Layout from '../components/Layout';
 
 export async function getStaticProps() {
   const blogDirectory = path.join(process.cwd(), 'blogs');
@@ -23,17 +24,19 @@ export async function getStaticProps() {
 
 export default function Blog({ blogs }) {
   return (
-    <main style={{ padding: '2rem' }}>
-      <h1>Blog</h1>
-      <ul>
-        {blogs.map((blog) => (
-          <li key={blog.slug}>
-            <Link href={`/blog/${blog.slug}`}>
-              <a>{blog.title}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </main>
+    <Layout>
+      <div className="max-w-4xl mx-auto p-4">
+        <h1 className="text-3xl font-bold mb-6">Blog</h1>
+        <ul className="space-y-4">
+          {blogs.map((blog) => (
+            <li key={blog.slug} className="border-b pb-4">
+              <Link legacyBehavior href={`/blog/${blog.slug}`}>
+                <a className="text-xl font-medium text-blue-600 hover:underline">{blog.title}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Layout>
   );
 }
