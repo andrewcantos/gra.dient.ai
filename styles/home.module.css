@@ -64,8 +64,34 @@
   color: #8be9fd; /* Dracula cyan */
   text-decoration: none;
   transition: color 0.3s ease;
+  margin-right: 1rem; /* Add spacing between links */
+}
+
+.navLink:last-child {
+  margin-right: 0; /* Remove margin for the last link */
 }
 
 .navLink:hover {
+  color: #50fa7b; /* Dracula green */
+}
+
+/* Add spacing and adjust font sizes for blog list */
+.blogList {
+  list-style: none;
+  padding: 0;
+}
+
+.blogListItem {
+  margin-bottom: 1.5rem;
+}
+
+.blogLink {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #8be9fd; /* Dracula cyan */
+  text-decoration: none;
+}
+
+.blogLink:hover {
   color: #50fa7b; /* Dracula green */
 }
