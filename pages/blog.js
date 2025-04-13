@@ -12,7 +12,7 @@ export async function getStaticProps() {
     const slug = filename.replace(/\.md$/, '');
     return {
       slug,
-      title: slug.replace(/-/g, ' ').toUpperCase(),
+      title: slug.replace(/-/g, ' '), // Removed all caps formatting
     };
   });
 
@@ -26,18 +26,15 @@ export async function getStaticProps() {
 export default function Blog({ blogs }) {
   return (
     <Layout>
-      <div className="blogContainer"> {/* Use a new class for blog layout */}
-        <h1 className="text-3xl font-bold mb-6">Blog</h1>
-        <ul className={styles.blogList}>
-          {blogs.map((blog) => (
-            <li key={blog.slug} className={styles.blogListItem}>
-              <Link legacyBehavior href={`/blog/${blog.slug}`}>
-                <a className={styles.blogLink}>{blog.title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul className={styles.blogList}> {/* Minimal list format without default bullets */}
+        {blogs.map((blog) => (
+          <li key={blog.slug} className={styles.blogListItem}> {/* Styled list item */}
+            <Link legacyBehavior href={`/blog/${blog.slug}`}>
+              <a className={styles.blogLink}>{blog.title}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </Layout>
   );
 }

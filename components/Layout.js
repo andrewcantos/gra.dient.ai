@@ -6,15 +6,15 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <header>
-        <h1>Gradient</h1>
+      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 0', borderBottom: '1px solid #ddd' }}>
+        <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Gradient</h1>
         <nav>
           <Link legacyBehavior href="/">
-            <a>Home</a>
+            <a style={{ marginRight: '1rem', textDecoration: 'none', color: 'inherit' }}>Home</a>
           </Link>
           {router.pathname !== '/blog' && (
             <Link legacyBehavior href="/blog">
-              <a>Blog</a>
+              <a style={{ textDecoration: 'none', color: 'inherit' }}>Blog</a>
             </Link>
           )}
         </nav>

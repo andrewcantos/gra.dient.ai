@@ -14,16 +14,15 @@ function throwError() {
 function Home() {
   return (
     <main className={styles.main}>
-      <header className={styles.header}>
-        <h1 className={styles.logo}>Gradient</h1>
+      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 0', borderBottom: '1px solid #ddd' }}> {/* Updated to match other pages */}
+        <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Gradient</h1>
         <nav>
           <Link legacyBehavior href="/blog">
-            <a className={styles.navLink}>Blog</a>
+            <a style={{ textDecoration: 'none', color: 'inherit' }}>Blog</a>
           </Link>
         </nav>
       </header>
-      <div className={styles.centeredContent}>
-        <h1 className={styles.title}>Gradient</h1>
+      <div className={styles.centeredContent}> {/* Removed redundant heading */}
         <p className={styles.subtitle}>
           Welcome to Gradient, an AI-powered investment organization revolutionizing the way you grow your wealth.
         </p>
