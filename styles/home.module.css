@@ -17,17 +17,18 @@
   max-width: 600px;
 }
 
+/* Title and subtitle styles */
 .title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #333;
+  color: #ff79c6; /* Dracula pink */
 }
 
 .subtitle {
   font-size: 1.25rem;
   font-weight: 400;
-  color: #555;
+  color: #bd93f9; /* Dracula purple */
 }
 
 .hr {
@@ -47,24 +48,24 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ddd;
+  background-color: #44475a; /* Dracula selection */
+  border-bottom: 1px solid #6272a4; /* Dracula comment */
   z-index: 1000;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #f8f8f2; /* Dracula foreground */
 }
 
 .navLink {
   font-size: 1rem;
-  color: #555;
+  color: #8be9fd; /* Dracula cyan */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .navLink:hover {
-  color: #000;
+  color: #50fa7b; /* Dracula green */
 }
