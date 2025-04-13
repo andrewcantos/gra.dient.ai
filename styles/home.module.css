@@ -2,12 +2,15 @@
 
 /* Removed global styles for `body` to avoid Webpack errors */
 
+/* Add padding to the main content to avoid overlap with the fixed header */
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
+  padding-top: 80px; /* Adjust based on header height */
 }
 
 .centeredContent {
@@ -31,4 +34,37 @@
   border: none;
   border-bottom: 1px solid #efefef;
   margin: 3em auto;
+}
+
+/* Header styles */
+/* Ensure the header is fixed at the top */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navLink {
+  font-size: 1rem;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #000;
 }
