@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import styles from '../styles/home.module.css';
 import { useRouter } from 'next/router';
 
 export default function Layout({ children }) {
@@ -7,20 +6,20 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <header className={styles.header}>
-        <h1 className={styles.logo}>Gradient</h1>
+      <header>
+        <h1>Gradient</h1>
         <nav>
           <Link legacyBehavior href="/">
-            <a className={styles.navLink}>Home</a>
+            <a>Home</a>
           </Link>
           {router.pathname !== '/blog' && (
             <Link legacyBehavior href="/blog">
-              <a className={styles.navLink}>Blog</a>
+              <a>Blog</a>
             </Link>
           )}
         </nav>
       </header>
-      <main className={styles.main}>{children}</main>
+      <main>{children}</main>
     </>
   );
 }

@@ -1,34 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* Removed all styles */
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: #282a36; /* Dracula background */
-  color: #f8f8f2; /* Dracula foreground */
-}
-
-.header {
-  background-color: #44475a; /* Dracula selection */
-  border-bottom: 1px solid #6272a4; /* Dracula comment */
-}
-
-.navLink {
-  color: #8be9fd; /* Dracula cyan */
-}
-
-.navLink:hover {
-  color: #50fa7b; /* Dracula green */
-}
-
-/* Adjusted the main class to avoid vertical centering */
-.main {
-  background: #282a36; /* Match body background */
-  color: #f8f8f2; /* Match body text color */
-  padding-top: 80px; /* Ensure content starts below the header */
-  min-height: 100vh; /* Ensure the main area takes full height */
 }

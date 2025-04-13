@@ -41,10 +41,10 @@ export default function BlogPost({ title, date, content }) {
 
   return (
     <Layout>
-      <div className="blogContainer"> {/* Use a new class for blog article layout */}
-        <h1 className="text-3xl font-bold mb-4">{title}</h1>
-        <p className="text-sm text-gray-400 mb-8">{date}</p>
-        <div className="prose prose-invert" dangerouslySetInnerHTML={{ __html: htmlContent }} />
+      <div className="blogContainer"> {/* Ensure proper alignment */}
+        <h1 className="blogTitle">{title}</h1> {/* Use blogTitle class for consistent styling */}
+        <p className="blogDate">{date}</p> {/* Use blogDate class for consistent styling */}
+        <div className="blogContent prose prose-invert" dangerouslySetInnerHTML={{ __html: htmlContent }} /> {/* Use blogContent class for consistent styling */}
       </div>
     </Layout>
   );
