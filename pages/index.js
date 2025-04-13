@@ -13,12 +13,14 @@ function throwError() {
 function Home() {
   return (
     <main className={styles.main}>
-      <h1>Gradient</h1>
-      <p>
-        Welcome to Gradient, an AI-powered investment organization revolutionizing the way you grow your wealth.
-      </p>
+      <div className={styles.centeredContent}>
+        <h1 className={styles.title}>Gradient</h1>
+        <p className={styles.subtitle}>
+          Welcome to Gradient, an AI-powered investment organization revolutionizing the way you grow your wealth.
+        </p>
+      </div>
     </main>
-  )
+  );
 }
 
-export default Home
+export default Home;
