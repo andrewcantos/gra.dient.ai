@@ -41,14 +41,10 @@ export default function BlogPost({ title, date, content }) {
 
   return (
     <Layout>
-      <div className="max-w-4xl mx-auto p-4">
+      <div className="max-w-4xl mx-auto p-4 text-left mt-8"> {/* Added mt-8 to align content to the top */}
         <h1 className="text-3xl font-bold mb-2">{title}</h1>
         <p className="text-sm text-gray-400 mb-6">{date}</p>
         <div className="prose prose-invert" dangerouslySetInnerHTML={{ __html: htmlContent }} />
-        <div className="mt-8">
-          <a href="/blog" className="text-blue-500 hover:underline mr-4">Back to Blogs</a>
-          <a href="/" className="text-blue-500 hover:underline">Home</a>
-        </div>
       </div>
     </Layout>
   );
