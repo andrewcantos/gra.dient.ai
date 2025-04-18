@@ -3,6 +3,7 @@ import Button from '../components/Button'
 import ClickCount from '../components/ClickCount'
 import Link from 'next/link';
 import styles from '../styles/home.module.css'
+import BackgroundCubes from '../components/BackgroundCubes';
 
 function throwError() {
   console.log(
@@ -14,6 +15,7 @@ function throwError() {
 function Home() {
   return (
     <main className={styles.main}>
+      <BackgroundCubes />
       <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 0', borderBottom: '1px solid #ddd' }}> {/* Updated to match other pages */}
         <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Gradient</h1>
         <nav>
