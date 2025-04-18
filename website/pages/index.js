@@ -20,9 +20,10 @@ function Home() {
           {/* Blog link removed */}
         </nav>
       </header>
-      <div className={styles.centeredContent}> {/* Removed redundant heading */}
+      <div className={styles.centeredContent}> {/* Updated message */}
         <p className={styles.subtitle}>
-          Welcome to Gradient, an AI-powered investment organization revolutionizing the way you grow your wealth.
+          gra.dient.ai is a fully automated AI investment fund.<br />
+          We are not currently open to outside investors.
         </p>
       </div>
     </main>
