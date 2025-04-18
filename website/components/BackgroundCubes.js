@@ -31,7 +31,7 @@ export default function BackgroundCubes() {
     for (let i = 0; i < NUM_CUBES; i++) {
       const geometry = new THREE.DodecahedronGeometry(CUBE_SIZE);
       const edges = new THREE.EdgesGeometry(geometry);
-      const material = new THREE.LineBasicMaterial({ color: 0x888888, transparent: true, opacity: 0.3 });
+      const material = new THREE.LineBasicMaterial({ color: 0xbbbbbb, transparent: true, opacity: 0.3 });
       const line = new THREE.LineSegments(edges, material);
       // Center the shape
       line.position.set(0, 0, 0);
