@@ -6,7 +6,10 @@ import styles from '../styles/home.module.css';
 
 export async function getStaticProps() {
   const blogDirectory = path.join(process.cwd(), 'blogs');
-  const filenames = fs.readdirSync(blogDirectory);
+  let filenames = [];
+  if (fs.existsSync(blogDirectory)) {
+    filenames = fs.readdirSync(blogDirectory);
+  }
 
   const blogs = filenames.map((filename) => {
     const slug = filename.replace(/\.md$/, '');
