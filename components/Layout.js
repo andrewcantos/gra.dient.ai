@@ -12,11 +12,6 @@ export default function Layout({ children }) {
           <Link legacyBehavior href="/">
             <a style={{ marginRight: '1rem', textDecoration: 'none', color: 'inherit' }}>Home</a>
           </Link>
-          {router.pathname !== '/blog' && (
-            <Link legacyBehavior href="/blog">
-              <a style={{ textDecoration: 'none', color: 'inherit' }}>Blog</a>
-            </Link>
-          )}
         </nav>
       </header>
       <main>{children}</main>

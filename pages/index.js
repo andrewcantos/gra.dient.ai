@@ -17,9 +17,7 @@ function Home() {
       <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 0', borderBottom: '1px solid #ddd' }}> {/* Updated to match other pages */}
         <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Gradient</h1>
         <nav>
-          <Link legacyBehavior href="/blog">
-            <a style={{ textDecoration: 'none', color: 'inherit' }}>Blog</a>
-          </Link>
+          {/* Blog link removed */}
         </nav>
       </header>
       <div className={styles.centeredContent}> {/* Removed redundant heading */}
