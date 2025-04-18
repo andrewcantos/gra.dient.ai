@@ -22,8 +22,7 @@ function Home() {
       </header>
       <div className={styles.centeredContent}> {/* Updated message */}
         <p className={styles.subtitle}>
-          gra.dient.ai is a fully automated AI investment fund.<br />
-          We are not currently open to outside investors.
+          gra.dient.ai is a fully automated AI investment fund.
         </p>
       </div>
     </main>
