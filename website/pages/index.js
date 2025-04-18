@@ -21,8 +21,11 @@ function Home() {
         </nav>
       </header>
       <div className={styles.centeredContent}> {/* Updated message */}
-        <p className={styles.subtitle}>
-          Fully automated investment research.
+        <h2 className={styles.subtitle}>
+          Autonomous Investment Research
+        </h2>
+        <p>
+          We’re building a system that learns how to invest — not by following rules, but by discovering them. Through continuous experimentation and refinement, it learns the underlying drivers of investment success from the ground up.
         </p>
       </div>
     </main>
