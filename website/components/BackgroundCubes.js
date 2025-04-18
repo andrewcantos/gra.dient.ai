@@ -17,9 +17,9 @@ export default function BackgroundCubes() {
     const aspect = width / height;
     const d = 15;
     const camera = new THREE.OrthographicCamera(
-      -d * aspect, d * aspect, d, -d, 0.1, 1000
+      -d * aspect, d * aspect, d, -d, 0.01, 2000
     );
-    camera.position.z = 18;
+    camera.position.z = 60;
 
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
     renderer.setClearColor(0x000000, 0); // transparent background
