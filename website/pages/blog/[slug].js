@@ -6,7 +6,10 @@ import { marked } from 'marked';
 
 export async function getStaticPaths() {
   const blogDirectory = path.join(process.cwd(), 'blogs');
-  const filenames = fs.readdirSync(blogDirectory);
+  let filenames = [];
+  if (fs.existsSync(blogDirectory)) {
+    filenames = fs.readdirSync(blogDirectory);
+  } // else leave as empty array
 
   const paths = filenames.map((filename) => {
     const slug = filename.replace(/\.md$/, '');
@@ -24,14 +27,17 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const blogDirectory = path.join(process.cwd(), 'blogs');
   const filePath = path.join(blogDirectory, `${params.slug}.md`);
-  const fileContents = fs.readFileSync(filePath, 'utf8');
-  const { data, content } = matter(fileContents);
+  let fileContents = '';
+  if (fs.existsSync(filePath)) {
+    fileContents = fs.readFileSync(filePath, 'utf8');
+  }
+  const { data, content } = matter(fileContents || '');
 
   return {
     props: {
-      title: data.title,
-      date: data.date,
-      content,
+      title: data?.title || '',
+      date: data?.date || '',
+      content: content || '',
     },
   };
 }
