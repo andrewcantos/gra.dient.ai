@@ -27,7 +27,7 @@ function Home() {
           Autonomous Investment Research
         </h2>
         <p>
-          We’re building a system that learns how to invest — not by following rules, but by discovering them. Through continuous experimentation and refinement, it learns the underlying drivers of investment success from the ground up.
+          We’re building a system that learns how to invest — not by following rules, but by discovering them. Through autonomous experimentation and refinement, it learns the underlying drivers of investment success from the ground up.
         </p>
       </div>
     </main>
