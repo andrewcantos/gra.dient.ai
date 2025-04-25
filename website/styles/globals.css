@@ -1,8 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 /* Removed all styles */
 body {
   margin: 0;
   padding: 1rem 2rem; /* Align body padding with the title in the nav */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
+}
+
+/* Make headings use a lighter weight */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; /* Light weight */
+  color: #ffffff; /* Bright white for headings */
+}
+
+a {
+  color: #bb86fc; /* Accent color for links */
+}
+
+.subtitle {
+  color: #bb86fc; /* Accent color for subtitles */
+}
+
+hr {
+  border-color: #222222; /* Close to black horizontal line */
+}
+
+p {
+  color: #bbbbbb; /* Even darker paragraph text */
 }

@@ -48,10 +48,14 @@
   font-weight: 500;
 }
 
+.title {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Subtle gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+}
+
 .subtitle {
-  font-size: 1.1rem;
-  color: #666;
-  font-weight: 500;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #93c5fd, #bfdbfe, #dbeafe); /* Lighter blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes the gradient visible */
 }
